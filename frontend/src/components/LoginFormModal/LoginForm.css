@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+.log-in-button {
+  background-image: linear-gradient(
+    to right,
+    #2b5876 0%,
+    #4e4376 51%,
+    #2b5876 100%
+  );
+}
+.log-in-button {
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  border: none;
+  padding: 10px 25px;
+}
+
+.log-in-button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.label-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: rgb(129, 105, 209);
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.h1-thing {
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: rgb(129, 105, 209);
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.h2-thing {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: black;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.class-input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.class-input:focus {
+  outline: none;
+  background-color: white;
+  border-bottom: 2px solid purple;
+}
+
+.class-input:active {
+  border-bottom: 2px solid purple;
+}
+
