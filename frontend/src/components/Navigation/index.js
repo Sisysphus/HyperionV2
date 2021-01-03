@@ -6,6 +6,7 @@ import LoginFormModal from "../LoginFormModal";
 import "./Navigation.css";
 import Header from "./Header";
 import Features from "./Features";
+import Stock from "./Stock";
 
 function Navigation({ isLoaded }) {
   const sessionUser = useSelector((state) => state.session.user);
@@ -30,14 +31,33 @@ function Navigation({ isLoaded }) {
         <ul className="nav-ul">
           <li className="nav-li">
             <NavLink exact to="/">
-              <a href="/">Hyperion</a>
+              <a className="mrhyperion" href="/">
+                Hyperion
+              </a>
             </NavLink>
             {isLoaded && sessionLinks}
           </li>
         </ul>
       </div>
-      <Header />
-      <Features />
+      <h1 className="faang">
+        Hyperion: Only the best <br></br> FAANG Companies Exchange
+      </h1>
+      {sessionUser ? "" : <Header />}
+      {sessionUser ? "" : <Features />}
+      {sessionUser ? <Stock sim="FB" /> : ""}
+      {sessionUser ? <Stock sim="AAPL" /> : ""}
+      {sessionUser ? <Stock sim="AMZN" /> : ""}
+      {sessionUser ? <Stock sim="NFLX" /> : ""}
+      {sessionUser ? <Stock sim="GOOGL" /> : ""}
+      {/*
+      - I was going to render 4 
+      - different stock divs with their own respective stock information (Symbol, info )
+      - API is making too many calls and I am not sure what todo
+      - #Covid19 Broke
+      - #Stubborn because Finnhub was giving me extreme problems but I made it semi-work with
+      Alphavantage*
+      - I got it working but when I got to this step... it failed on me, it was too late to switch
+      */}
     </div>
   );
 }

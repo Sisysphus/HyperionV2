@@ -204,3 +204,85 @@ h1 {
   color: white;
   margin-right: 10px;
 }
+
+.main-content-container {
+  height: 45vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0 !important;
+}
+
+.stock-div {
+  background: white;
+  width: 80%;
+  padding: 20px;
+  height: 200px;
+  border-left: 7px solid #00587a;
+  border-top-right-radius: 5px;
+  overflow: scroll;
+  border-bottom-right-radius: 5px;
+  box-shadow: rgba(59, 46, 240, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
+    rgba(65, 46, 240, 0.2) 0px 15px, rgba(0, 38, 255, 0.1) 0px 20px,
+    rgba(57, 43, 250, 0.05) 0px 25px;
+}
+
+.symbol-style {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.address {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.mrhyperion {
+  font-size: 20px;
+}
+
+.logout-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: rgb(170, 170, 170);
+  margin-right: 20px;
+  border-right: 1px solid rgb(182, 182, 182);
+  padding-right: 20px;
+  height: 20px;
+}
+
+.customizeit {
+  width: 100%;
+}
+
+.faang {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+}
+
+/******* Chart CSS  */

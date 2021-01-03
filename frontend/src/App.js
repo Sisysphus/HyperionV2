@@ -22,10 +22,10 @@ function App() {
           <Route path="/">
             <Footer />
           </Route>
-          {/* <Route path="/login" >
+          {/* <Route path="/login">
             <LoginFormPage />
           </Route> */}
-          <Route path="/signup">
+          <Route exact path="/signup">
             <SignupFormPage />
           </Route>
         </Switch>
