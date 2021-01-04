@@ -9,29 +9,29 @@ function Stock({ sim }) {
   let [description1, setDescription1] = useState([]);
   const API_KEY = "7B9VRQ2X6FX1KB7N";
 
-  //   // It works it's just a problem with the API KEY
-  let stringBoi1 = async (sim) => {
-    const data = await axios.get(
-      `https://www.alphavantage.co/query?function=OVERVIEW&symbol=IBM&apikey=demo`
-    );
-    setSymbol1(data.data.Symbol);
-    setExchange1(data.data.Exchange);
-    setAddress1(data.data.Address);
-    setDescription1(data.data.Description);
-    console.log(data.data.Symbol);
-  };
-
-  //   Comment in this one and see the data flow
-
-  //   let stringBoi1 = async (string) => {
+  //   // It works it's just a problem with the API KEY and excess calls
+  //   let stringBoi1 = async (sim) => {
   //     const data = await axios.get(
-  //       `https://www.alphavantage.co/query?function=OVERVIEW&symbol=${sim}&apikey=${API_KEY}`
+  //       `https://www.alphavantage.co/query?function=OVERVIEW&symbol=IBM&apikey=demo`
   //     );
   //     setSymbol1(data.data.Symbol);
   //     setExchange1(data.data.Exchange);
   //     setAddress1(data.data.Address);
   //     setDescription1(data.data.Description);
+  //     console.log(data.data.Symbol);
   //   };
+
+  //   Comment in this one and see the data flow
+
+  let stringBoi1 = async (string) => {
+    const data = await axios.get(
+      `https://www.alphavantage.co/query?function=OVERVIEW&symbol=${sim}&apikey=${API_KEY}`
+    );
+    setSymbol1(data.data.Symbol);
+    setExchange1(data.data.Exchange);
+    setAddress1(data.data.Address);
+    setDescription1(data.data.Description);
+  };
 
   stringBoi1(sim);
   return (

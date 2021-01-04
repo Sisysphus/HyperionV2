@@ -7,7 +7,7 @@ function Features() {
       <div className="card-wrapper">
         <div className="card animate__animated animate__slideInLeft">
           <i className="far fa-user-circle icon"></i>
-          <h1> Satyr</h1>
+          <h1> User</h1>
           <p className="hyperion-p">
             Create an Account to access all features Hyperion has to offer
           </p>
@@ -21,9 +21,11 @@ function Features() {
         </div>
         <div className="card animate__animated animate__slideInRight">
           <i className="fas fa-money-bill-wave icon"></i>
-          <h1> Hyperion</h1>
+          <h1> HyperionV2</h1>
           <p className="hyperion-p">
-            Trade without risk using our paper trading feature
+            Trade without risk using our Hyperion V2 trading system. Our paper
+            trading feature ensures that you receive the proper education before
+            making speculative risks. Become a true Hyperion
           </p>
         </div>
       </div>

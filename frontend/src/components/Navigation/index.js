@@ -39,9 +39,7 @@ function Navigation({ isLoaded }) {
           </li>
         </ul>
       </div>
-      <h1 className="faang">
-        Hyperion: Only the best <br></br> FAANG Companies Exchange
-      </h1>
+      <h1 className="faang"></h1>
       {sessionUser ? "" : <Header />}
       {sessionUser ? "" : <Features />}
       {sessionUser ? <Stock sim="FB" /> : ""}
@@ -58,6 +56,10 @@ function Navigation({ isLoaded }) {
       Alphavantage*
       - I got it working but when I got to this step... it failed on me, it was too late to switch
       */}
+      
+      {/* The next feature is to connect a search bar with the ticker symbol
+      automating the manual stock entries to render out the stock data that 
+      a customer wants to interact with */}
     </div>
   );
 }
